@@ -302,8 +302,8 @@
 
       const services = [
         { id: 1, icon: Users, title: "Roblox Services", description: "Roblox Followers\nGroup Members\nFriend Request\nGame Visits\nGame Favorites", price: "$1.00/K" },
-        { id: 2, icon: Sparkles, title: "Group Members", description: "Grow your community instantly", price: "$1.00/K" },
-        { id: 3, icon: Key, title: "Keys", description: "Random Steam Keys", price: "¢0.50/Per" },
+        { id: 2, icon: Sparkles, title: "Discord", description: "Discord usernames and accounts", price: "$1.00/25" },
+        { id: 3, icon: Key, title: "Keys", description: "Random Steam Keys ", price: "¢0.50/Per" },
         { id: 4, icon: Tag, title: "Promo Codes", description: "Exclusive discount codes for: DD, Hellofresh, ect", price: "$1.00" }
       ];
 
@@ -361,22 +361,31 @@
             }}
           />
           
-          <div className="max-w-4xl w-full relative z-10">
-            {/* Hero with Blur Text Animation */}
-            <div className="text-center mb-12">
-              <h1 className="text-4xl md:text-5xl font-bold mb-3">
-                <BlurText text="Boost" delay={0} />
-                {' '}
-                <span style={{ color: '#ffcffd' }}>
-                  <BlurText text="Your" delay={200} />
-                  {' '}
-                  <BlurText text="Growth" delay={400} />
-                </span>
-              </h1>
-              <p className="text-gray-400 text-sm">
-                <BlurText text="Premium social services" delay={600} />
-              </p>
-              
+<div className="max-w-4xl w-full relative z-10">
+  {/* Hero with Blur Text Animation */}
+  <div className="text-center mb-12">
+    <h1 className="text-4xl md:text-5xl font-bold mb-3">
+      <div className="relative inline-block cursor-pointer group">
+        <div 
+          className="absolute -inset-4 blur-2xl opacity-0 group-hover:opacity-30 transition-opacity duration-500 rounded-lg" 
+          style={{ backgroundColor: '#ffcffd' }}
+        />
+        <div className="relative">
+          <BlurText text="DollyShop" delay={0} />
+        </div>
+      </div>
+      <div>
+        <span style={{ color: '#ffcffd' }}>
+          <BlurText text="Boost Your" delay={200} />
+          {' '}
+          <BlurText text="Growth" delay={400} />
+        </span>
+      </div>
+    </h1>
+    <p className="text-gray-400 text-sm">
+      <BlurText text="Premium social services" delay={600} />
+    </p>
+        
               {/* Trust Badge */}
               <div 
                 className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-full border"
@@ -449,7 +458,7 @@
             <div className="flex justify-center items-center gap-6 mb-8" style={{ opacity: 0, animation: 'fadeIn 0.5s ease-out 1.7s forwards' }}>
               <div className="text-center">
                 <div className="text-2xl font-bold" style={{ color: '#ffcffd' }}>
-                  <CountUp end={1} duration={2000} delay={1700} suffix="+" />
+                  <CountUp end={1} duration={2000} delay={1700} suffix="+"  />
                 </div>
                 <div className="text-xs text-gray-500">Happy Customers</div>
               </div>
@@ -478,14 +487,14 @@
                 </span>
               </MagneticButton>
               <p className="mt-3 text-xs text-gray-500" style={{ opacity: 0, animation: 'fadeIn 0.5s ease-out 1.5s forwards' }}>
-                Secure • <a href="https://discord.com/invite/rqgSgPZfYE" target="_blank" rel="noopener noreferrer" className="hover:underline transition-colors" style={{ color: '#ffcffd' }}>24/7 Support</a>
+                Secure • <a href="https://discord.com/invite/dollyshop" target="_blank" rel="noopener noreferrer" className="hover:underline transition-colors" style={{ color: '#ffcffd' }}>24/7 Support</a>
               </p>
             </div>
           </div>
           
           {/* Floating Discord Button */}
           <a
-            href="https://discord.com/invite/rqgSgPZfYE"
+            href="https://discord.com/invite/dollyshop"
             target="_blank"
             rel="noopener noreferrer"
             className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 group"
